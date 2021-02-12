@@ -5,7 +5,7 @@ object Main {
 
   def main(args: Array[String]): Unit = {
 
-    var opcion = 11
+    var opcion = 0
 
     do {
 
@@ -18,6 +18,7 @@ object Main {
       println("5) Calcular total de divisores entreros de un número")
       println("6) Convertir Decimal a Binario")
       println("7) Calcular el total de vocales en una cadena")
+      println("8) Salir.")
       println("")
       println("------------------------------------------------")
       println("")
@@ -77,12 +78,9 @@ object Main {
         println("Ingresa un texto o frase: ")
         var cadena = StdIn.readLine()
         ej07TotalVocales(cadena, 1, 0)
-      } else {
-        println("Dato Incorrecto")
       }
 
-
-    } while(opcion != 0)
+    } while(opcion != 8)
 
 
     //ej01Sumatoria(20, 50, 20)
